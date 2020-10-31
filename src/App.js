@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react'
 import Button from './components/Button'
 import Counter from './components/Counter'
+import AddressForm from './components/AddressForm'
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
 
       <p>Counter</p>
       <Counter />
+
+      <h2>Address Form</h2>
+      <AddressForm />
     </>
   )
 }

@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react'
 import Button from './components/Button'
+import Counter from './components/Counter'
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
         active="ON"
         inactive="OFF"
       />
+
+      <p>Counter</p>
+      <Counter />
     </>
   )
 }

@@ -1,3 +1,3 @@
 # Hooks Playground
 
-* App to practice React Hooks
+* App to practice React hooks

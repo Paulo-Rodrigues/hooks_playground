@@ -1,23 +1,16 @@
 import './App.css';
-import React from 'react'
-import Button from './components/Button'
+import React, { useState} from 'react'
+// import Button from './components/Button'
 import Counter from './components/Counter'
-import AddressForm from './components/AddressForm'
+// import AddressForm from './components/AddressForm'
 
 function App() {
+  const [visible, setVisible] = useState(false)
   return (
     <>
-      <p>Button using useState</p>
-      <Button
-        active="ON"
-        inactive="OFF"
-      />
-
+      <button onClick={() => setVisible(!visible)}>Show/Hide</button>
       <p>Counter</p>
-      <Counter />
-
-      <h2>Address Form</h2>
-      <AddressForm />
+      { visible && <Counter />}
     </>
   )
 }
